@@ -29,8 +29,8 @@
             <TableRow>
                 <ImageView
                     android:id="@+id/imageView0"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                 />
                 <TableLayout
                     android:layout_width="fill_parent"
@@ -62,8 +62,8 @@
             <TableRow>
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     />
                 <TableLayout
                     android:layout_width="fill_parent"
@@ -95,8 +95,8 @@
             <TableRow>
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     />
                 <TableLayout
                     android:layout_width="fill_parent"
@@ -128,8 +128,8 @@
             <TableRow>
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     />
                 <TableLayout
                     android:layout_width="fill_parent"
@@ -161,8 +161,8 @@
             <TableRow>
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     />
                 <TableLayout
                     android:layout_width="fill_parent"
