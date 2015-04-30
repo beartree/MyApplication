@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.shu7817.myapplication.ResultActivity">
+
+    <TextView android:text="Results for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/logo">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            >
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView0"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1"
+                    >
+                    <TableRow>
+                        <TextView android:id="@+id/title0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:padding="3dip"
+                            android:editable="true"
+                            android:singleLine="false">
+                        </TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/price0"
+                            android:layout_below="@+id/title0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:padding="3dip"
+                            android:singleLine="false"
+                            android:editable="true">
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1"
+                    >
+                    <TableRow>
+                        <TextView android:id="@+id/title1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:padding="3dip"
+                            android:editable="true"
+                            android:singleLine="false">
+                        </TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/price1"
+                            android:layout_below="@+id/title1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:padding="3dip"
+                            android:singleLine="false"
+                            android:editable="true">
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1"
+                    >
+                    <TableRow>
+                        <TextView android:id="@+id/title2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:padding="3dip"
+                            android:editable="true"
+                            android:singleLine="false">
+                        </TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/price2"
+                            android:layout_below="@+id/title2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:padding="3dip"
+                            android:singleLine="false"
+                            android:editable="true">
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1"
+                    >
+                    <TableRow>
+                        <TextView android:id="@+id/title3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:padding="3dip"
+                            android:editable="true"
+                            android:singleLine="false">
+                        </TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/price3"
+                            android:layout_below="@+id/title3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:padding="3dip"
+                            android:singleLine="false"
+                            android:editable="true">
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1"
+                    >
+                    <TableRow>
+                        <TextView android:id="@+id/title4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:padding="3dip"
+                            android:editable="true"
+                            android:singleLine="false">
+                        </TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/price4"
+                            android:layout_below="@+id/title4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:padding="3dip"
+                            android:singleLine="false"
+                            android:editable="true">
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
