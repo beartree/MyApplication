@@ -56,13 +56,15 @@ public class ResultActivity extends ActionBarActivity {
 
         Intent intent = getIntent();
         String result = intent.getStringExtra("results");
+        String keywords = intent.getStringExtra("keywords");
+
         try {
             JSONObject json = new JSONObject(result);
             JSONObject results = json.getJSONObject("searchResult");
             JSONArray resultArray = results.getJSONArray("item");
+            TextView resultLogo = (TextView) findViewById(R.id.resultLogo);
+            resultLogo.setText("Results for: \'" + keywords + "\'");
             for (int i = 0; i < resultArray.length(); i++) {
-
-
                 String titleId = "title" + i;
                 TextView title = (TextView)findViewById(getResources().getIdentifier(titleId, "id", getPackageName()));
                 JSONObject item = (JSONObject) resultArray.get(i);

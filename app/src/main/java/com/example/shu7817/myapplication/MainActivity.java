@@ -164,6 +164,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public class UrlRequest extends AsyncTask <String, Integer, String> {
+        final EditText keywordText = (EditText) findViewById(R.id.keyword);
+        final TextView alertText = (TextView) findViewById(R.id.alert);
         @Override
         protected String doInBackground(String... link) {
             return GET(link[0]);
@@ -171,10 +173,23 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            Intent intent = new Intent();
-            intent.putExtra("results", result);
-            intent.setClass(MainActivity.this,ResultActivity.class);
-            startActivity(intent);
+            try {
+                JSONObject json = new JSONObject(result);
+                JSONObject results = json.getJSONObject("searchResult");
+                JSONObject test = results.getJSONObject("@attributes");
+                int count = results.getJSONObject("@attributes").getInt("count");
+                if (count > 0) {
+                    Intent intent = new Intent();
+                    intent.putExtra("results", result);
+                    intent.putExtra("keywords", keywordText.getText().toString());
+                    intent.setClass(MainActivity.this,ResultActivity.class);
+                    startActivity(intent);
+                } else {
+                    alertText.setText("No Search Result");
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             return;
         }
     }

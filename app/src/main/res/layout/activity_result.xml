@@ -9,15 +9,16 @@
     <TextView android:text="Results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logo"
+        android:id="@+id/resultLogo"
         android:textSize="30dp"
         android:layout_alignParentTop="true"
+        android:editable="true"
         android:textStyle="bold" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/logo">
+        android:layout_below="@+id/resultLogo">
 
         <TableLayout
             android:layout_width="fill_parent"
