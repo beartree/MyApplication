@@ -36,8 +36,7 @@ import android.util.Log;
 
 
 public class MainActivity extends ActionBarActivity {
-    private static final String[] sortByString={"Best Match","Price: highest first","Price + Shipping: highest first","Price + Shipping:\n" +
-            "lowest first"};
+    private static final String[] sortByString={"Best Match","Price: highest first","Price + Shipping: highest first","Price + Shipping: lowest first"};
     private static final String phpUrl = "http://ebayshopping-env.elasticbeanstalk.com";
 
     @Override
@@ -81,7 +80,17 @@ public class MainActivity extends ActionBarActivity {
                     return;
                 }
                 else if (keyword.length() != 0){
-                    String url = phpUrl + "?keywords="+keyword+"&pricerange1="+lowPrice+"&pricerange2="+highPrice+"&sortBy=BestMatch"+"&resultPerPage=5&pageNum=&maxShippingDays=";
+                    String sort = "BestMatch";
+                    if (sortby.equals("Best Match".toLowerCase())) {
+                        sort = "BestMatch";
+                    } else if (sortby.equals("Price: highest first".toLowerCase())) {
+                        sort = "CurrentPriceHighest";
+                    } else if (sortby.equals("Price + Shipping: highest first".toLowerCase())) {
+                        sort = "PricePlusShippingHighest";
+                    } else if (sortby.equals("Price + Shipping: lowest first".toLowerCase())) {
+                        sort = "PricePlusShippingLowest";
+                    }
+                    String url = phpUrl + "?keywords="+keyword+"&pricerange1="+lowPrice+"&pricerange2="+highPrice+"&sortBy=" + sort +"&resultPerPage=5&pageNum=&maxShippingDays=";
                     String arr[] = new String [1];
                     arr[0] = url;
                     UrlRequest request = new UrlRequest();

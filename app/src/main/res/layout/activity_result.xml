@@ -6,7 +6,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.shu7817.myapplication.ResultActivity">
 
-    <TextView android:text="Results for"
+    <TextView android:text="Results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/logo"
